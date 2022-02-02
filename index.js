@@ -28,7 +28,7 @@ mongoose
         if(err){
             return res.json(err)
         }
-        res.json(roomNames)
+        return res.json(roomNames)
     })
   })
   app.post('/createRooms',(req,res)=>{
